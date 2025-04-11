@@ -1,6 +1,7 @@
 #importing files for functions used in the program
 import board
-import task
+import action
+# import task
 
 #setting default values as we do not know how to load or save a file yet.
 #This will be changed out at later date
@@ -20,29 +21,11 @@ def menu():
     choices = {1,2,3,4,5}
 
     print (selection)  #Here for testing
-    action (selection)
-
-menu()
+    action(selection)
 
 # Main if else statement for menu choice
-def action(selection):
-    if selection in choices:
-        for selection == 1
-            board.view(tiles)
-        elif selection == 2
-            task.create()
-        elif selection == 3
-            task.status()
-        elif selection == 4
-            board.create_tile()
-        elif selection == 5
-            exit_program()
-        else:
-            print ("Improper selection.")
-            print ("Please select again")
-            menu()
-
+menu()
 # Program exit function.
-exit_program()
+def exit_program():
     print ("Thank you")
-    exit()
+    quit()
