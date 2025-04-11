@@ -5,8 +5,7 @@ import action
 
 #setting default values as we do not know how to load or save a file yet.
 #This will be changed out at later date
-tiles = ["To-Do", "In Progess", "Completed"]
-tasks = []
+#tasks = []
 
 # Basic Menu
 def menu():
@@ -21,7 +20,7 @@ def menu():
     choices = {1,2,3,4,5}
 
     print (selection)  #Here for testing
-    action(selection)
+    action.action(selection)
 
 # Main if else statement for menu choice
 menu()
